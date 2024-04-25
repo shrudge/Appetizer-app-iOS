@@ -10,7 +10,7 @@ import SwiftUI
 
 struct MaterialTabBar: View {
     let tabs: [TabBarItem]
-    let contentShape = RoundedRectangle(cornerRadius: 5)
+    let contentShape = RoundedRectangle(cornerRadius: 6)
     @Binding var selection: TabBarItem
 
     // For matchedGeometryEffect
@@ -34,13 +34,13 @@ struct MaterialTabBar: View {
             }
             .ignoresSafeArea(edges: .bottom)
             .clipShape(Capsule())
-            .shadow(color: .secondary.opacity(0.3), radius: 10, y: 5)
+//            .shadow(color: .secondary, radius: 0, y: 0)
             .padding(.horizontal)
             .onChange(of: selection) { _, newValue in
                 withAnimation(.bouncy(duration: 0.3)) {
                     localSelection = newValue
                 }
-            }
+            }.padding(10)
         }
     }
 }
