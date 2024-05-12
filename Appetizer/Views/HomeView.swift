@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var appetizers: [Appetizer] = []
     var body: some View {
         NavigationView {
-            List(MockData.Appetizers) { appetizer in
+            List(appetizers ) { appetizer in
                 HStack{
                     Image("asian-flank-steak")
                         .resizable()
@@ -29,6 +30,21 @@ struct HomeView: View {
             }
             .listStyle(.grouped)
             .navigationTitle("Home")
+        }
+        .onAppear {
+            getappetizers()
+        }
+    }
+    func getappetizers() {
+        NetworkManager.shared.getAppetizers { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let appetizers):
+                    self.appetizers = appetizers
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
         }
     }
 }

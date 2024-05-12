@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CB3B47CD2BDA204B003A587F /* Appetizers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B47CC2BDA204B003A587F /* Appetizers.swift */; };
+		CB417C252BE124180083E031 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB417C242BE124180083E031 /* NetworkManager.swift */; };
+		CB417C282BE12C130083E031 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB417C272BE12C130083E031 /* Error.swift */; };
 		CB9D2B262BCEFCBB00EB29A5 /* AppetizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D2B252BCEFCBB00EB29A5 /* AppetizerApp.swift */; };
 		CB9D2B282BCEFCBB00EB29A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D2B272BCEFCBB00EB29A5 /* MainView.swift */; };
 		CB9D2B2A2BCEFCBD00EB29A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9D2B292BCEFCBD00EB29A5 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		CB3B47CC2BDA204B003A587F /* Appetizers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizers.swift; sourceTree = "<group>"; };
+		CB417C242BE124180083E031 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CB417C272BE12C130083E031 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		CB9D2B222BCEFCBB00EB29A5 /* Appetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9D2B252BCEFCBB00EB29A5 /* AppetizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerApp.swift; sourceTree = "<group>"; };
 		CB9D2B272BCEFCBB00EB29A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -48,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB417C262BE12BF70083E031 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB417C242BE124180083E031 /* NetworkManager.swift */,
+				CB417C272BE12C130083E031 /* Error.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		CB9D2B192BCEFCBB00EB29A5 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				CB9D2B252BCEFCBB00EB29A5 /* AppetizerApp.swift */,
+				CB417C262BE12BF70083E031 /* Networking */,
 				CB9D2B392BCF047D00EB29A5 /* Views */,
 				CBBD290E2BCFCFAF0095F4FF /* TabBar */,
 				CB9D2B292BCEFCBD00EB29A5 /* Assets.xcassets */,
@@ -181,6 +195,8 @@
 				CB9D2B342BCEFD5300EB29A5 /* HomeView.swift in Sources */,
 				CB3B47CD2BDA204B003A587F /* Appetizers.swift in Sources */,
 				CB9D2B432BCF05F800EB29A5 /* TabBarItem.swift in Sources */,
+				CB417C282BE12C130083E031 /* Error.swift in Sources */,
+				CB417C252BE124180083E031 /* NetworkManager.swift in Sources */,
 				CB9D2B412BCF05BB00EB29A5 /* TabBarItemPreferenceKey.swift in Sources */,
 				CB9D2B362BCEFF5600EB29A5 /* OrderView.swift in Sources */,
 				CB9D2B282BCEFCBB00EB29A5 /* MainView.swift in Sources */,
