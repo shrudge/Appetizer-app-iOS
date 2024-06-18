@@ -10,6 +10,9 @@
 		CB3B47CD2BDA204B003A587F /* Appetizers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B47CC2BDA204B003A587F /* Appetizers.swift */; };
 		CB417C252BE124180083E031 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB417C242BE124180083E031 /* NetworkManager.swift */; };
 		CB417C282BE12C130083E031 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB417C272BE12C130083E031 /* Error.swift */; };
+		CB6EC7302C1C68B800495550 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EC72F2C1C68B800495550 /* LoadingView.swift */; };
+		CB78FDA02BF4D1A200406171 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78FD9F2BF4D1A200406171 /* Alerts.swift */; };
+		CB78FDA22BF4DB2300406171 /* AppetizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78FDA12BF4DB2300406171 /* AppetizerViewModel.swift */; };
 		CB9D2B262BCEFCBB00EB29A5 /* AppetizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D2B252BCEFCBB00EB29A5 /* AppetizerApp.swift */; };
 		CB9D2B282BCEFCBB00EB29A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D2B272BCEFCBB00EB29A5 /* MainView.swift */; };
 		CB9D2B2A2BCEFCBD00EB29A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9D2B292BCEFCBD00EB29A5 /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 		CB3B47CC2BDA204B003A587F /* Appetizers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizers.swift; sourceTree = "<group>"; };
 		CB417C242BE124180083E031 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CB417C272BE12C130083E031 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		CB6EC72F2C1C68B800495550 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CB78FD9F2BF4D1A200406171 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		CB78FDA12BF4DB2300406171 /* AppetizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerViewModel.swift; sourceTree = "<group>"; };
 		CB9D2B222BCEFCBB00EB29A5 /* Appetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9D2B252BCEFCBB00EB29A5 /* AppetizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerApp.swift; sourceTree = "<group>"; };
 		CB9D2B272BCEFCBB00EB29A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 				CBBD290E2BCFCFAF0095F4FF /* TabBar */,
 				CB9D2B292BCEFCBD00EB29A5 /* Assets.xcassets */,
 				CB9D2B2B2BCEFCBD00EB29A5 /* Preview Content */,
+				CB78FD9F2BF4D1A200406171 /* Alerts.swift */,
+				CB78FDA12BF4DB2300406171 /* AppetizerViewModel.swift */,
 			);
 			path = Appetizer;
 			sourceTree = "<group>";
@@ -106,6 +114,7 @@
 				CB9D2B332BCEFD5300EB29A5 /* HomeView.swift */,
 				CB9D2B372BCF003D00EB29A5 /* AccountView.swift */,
 				CB9D2B352BCEFF5600EB29A5 /* OrderView.swift */,
+				CB6EC72F2C1C68B800495550 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,13 +201,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB9D2B3B2BCF04CD00EB29A5 /* MaterialTabBar.swift in Sources */,
+				CB78FDA22BF4DB2300406171 /* AppetizerViewModel.swift in Sources */,
 				CB9D2B342BCEFD5300EB29A5 /* HomeView.swift in Sources */,
 				CB3B47CD2BDA204B003A587F /* Appetizers.swift in Sources */,
 				CB9D2B432BCF05F800EB29A5 /* TabBarItem.swift in Sources */,
 				CB417C282BE12C130083E031 /* Error.swift in Sources */,
 				CB417C252BE124180083E031 /* NetworkManager.swift in Sources */,
 				CB9D2B412BCF05BB00EB29A5 /* TabBarItemPreferenceKey.swift in Sources */,
+				CB6EC7302C1C68B800495550 /* LoadingView.swift in Sources */,
 				CB9D2B362BCEFF5600EB29A5 /* OrderView.swift in Sources */,
+				CB78FDA02BF4D1A200406171 /* Alerts.swift in Sources */,
 				CB9D2B282BCEFCBB00EB29A5 /* MainView.swift in Sources */,
 				CB9D2B262BCEFCBB00EB29A5 /* AppetizerApp.swift in Sources */,
 				CB9D2B382BCF003D00EB29A5 /* AccountView.swift in Sources */,

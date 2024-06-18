@@ -6,13 +6,27 @@
 //
 
 import SwiftUI
+struct ActivityIndicator: UIViewRepresentable {
+    
+    func makeUIView(context: Context) -> UIActivityIndicatorView {
+        let activityIndicatorView = UIActivityIndicatorView(style: .large)
+        activityIndicatorView.color = UIColor(named: "Black")
+        activityIndicatorView.startAnimating()
+        return activityIndicatorView
+    }
+    
+    func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {}
+}
 
 struct LoadingView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+           
+            ActivityIndicator()
+        }
     }
 }
 
 #Preview {
-    LoadingView()
+    ActivityIndicator()
 }
